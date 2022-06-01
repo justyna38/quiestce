@@ -1,0 +1,172 @@
+
+:root {
+    --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+    --gray: #eb5b19;
+    --darkgray: #eb5b19;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(#e6db49, #ddb034);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Lobster', sans-serif;
+    font-size: 1em;
+}
+
+
+#board{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+
+#tableauDeJeu{
+  
+display: grid;
+grid-template-columns: repeat(4, minmax(100px, 1fr));
+grid-gap: 20px;
+padding: 0 20px;
+  
+    }
+
+#tableauDeJeu img {
+    width: 100px;
+}
+
+#tableauDeJeu p {
+    font-size: 0.9em;
+}
+
+
+button{
+    text-align: center;
+    background-color: #4CAF50;
+    margin:20px;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 12px;
+}
+
+h1{
+    text-align: center;
+    margin: 0px auto;
+    display:block;
+    background-color: #2450c9;
+    color:#e6db49;
+    width: auto;
+    margin-top: 1%;
+    font-size: 4em;
+    
+}
+
+
+#devine{
+    background-color: red;
+}
+
+
+select {
+    /* Reset Select */
+    
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: var(--darkgray);
+    background-image: none;
+    cursor: pointer;
+}
+
+
+
+/* Custom Select wrapper */
+select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+    border-radius: 15px;
+}
+    select {
+  /* Reset Select */
+ 
+
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+
+
+.questions span {
+    font-size: 2em;
+}
+
+
+
+
+/* Arrow */
+
+
+/* Transition */
+
+
+#chapeau_81, #lunettes_71, #moustache_61, #chauve_31{
+    display: none;
+}
+
+#retourQuestion {
+    -webkit-animation-name: fadeInOpacity;
+    animation-name: fadeInOpacity;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    text-align: center;
+    font-size: 5em;
+   
+}
+
+@-webkit-keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fa-check{
+    color:green;
+}
+.fa-xmark {
+    color: red;
+}
+
+
+
+
+
+

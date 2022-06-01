@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Ajouter un personnage</title>
+</head>
+
+<body>
+    <form enctype="multipart/form-data" action="../../back/controleur/ajouteUnPersonnage.php" method="post">
+
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="inputSexe" class="input-group-text"> Prenom:</label>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" name="prenom" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+        </div>
+
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="inputSexe" class="input-group-text"> Sexe:</label>
+            </div>
+            <div class="col-sm-2">
+                <select name="sexe" id="inputSexe" class="custom-select">
+                    <option>Choisi le sexe</option>
+                    <option value="femme">femme</option>
+                    <option value="homme">homme</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="inputCheveux" class="input-group-text"> Couleur des cheveux </label>
+            </div>
+            <div class="col-sm-2">
+                <select name="cheveux" class="custom-select" id="inputCheveux">
+                    <option>Choisi la couleur de cheveux</option>
+                    <option value="blond">blond</option>
+                    <option value="roux">roux</option>
+                    <option value="brun">brun</option>
+                    <option value="chatain">chatain</option>
+                    <option value="blanc">blanc</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="inputCheveux" class="input-group-text">Couleur des yeux</label>
+            </div>
+            <div class="col-sm-2">
+                <select name="yeux" id="inputYeux" class="custom-select">
+                    <option>Choisi la couleur des yeux</option>
+                    <option value="bleux">bleux</option>
+                    <option value="marrons">marrons</option>
+                    <option value="verts">verts</option>
+
+                </select>
+            </div>
+        </div>
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="inputCheveux" class="input-group-text">Couleur de la peau</label>
+            </div>
+            <div class="col-sm-2">
+                <select name="peau" id="inputPeau" class="custom-select">
+                    <option>Choisi la couleur de la peau</option>
+                    <option value="claire">claire</option>
+                    <option value="foncé">foncé</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="inputChapeau" class="input-group-text">Chapeau</label>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="chapeau" value="oui" id="inputChapeau" class="form-check-input">
+                    <label for="">oui</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="chapeau" value="non" id="inputChapeau" class="form-check-input">
+                    <label for="">non</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="inputChapeau" class="input-group-text">Lunettes:</label>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="lunettes" value="oui" id="inputLunettes" class="form-check-input">
+                    <label for="">oui</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="lunettes" value="non" id="inputLunettes" class="form-check-input">
+                    <label for="">non</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="inputChauve" class="input-group-text">Chauve:</label>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="chauve" value="oui" id="inputChauve" class="form-check-input">
+                    <label for="">oui</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="chauve" value="non" id="inputChauve" class="form-check-input">
+                    <label for="">non</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="inputChauve" class="input-group-text">Moustache:</label>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="moustache" value="oui" id="inputMoustache" class="form-check-input">
+                    <label for="">oui</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="moustache" value="non" id="inputMoustache" class="form-check-input">
+                    <label for="">non</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <input type="file" name="file" />
+            </div>
+        </div>
+
+
+        <input type="submit" name="submit" class="btn btn-primary" value="Ajouter un personnage">
+
+    </form>
+
+    <button onclick="quitter()">Annuler</button>
+
+    <script type='text/javascript'>
+        function quitter() {
+          document.location.href = ('../../front/index.html');
+        }
+    </script>
+</body>
+
+
+</html>
